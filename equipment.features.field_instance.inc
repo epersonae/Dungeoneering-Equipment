@@ -160,7 +160,7 @@ function equipment_field_default_field_instances() {
     'label' => 'Cost',
     'required' => 0,
     'settings' => array(
-      'max' => '',
+      'max' => 500,
       'min' => 1,
       'prefix' => '',
       'suffix' => 'gp',
@@ -243,7 +243,7 @@ function equipment_field_default_field_instances() {
     'label' => 'Weight',
     'required' => 0,
     'settings' => array(
-      'max' => '',
+      'max' => 100,
       'min' => 1,
       'prefix' => '',
       'suffix' => 'lb.',
