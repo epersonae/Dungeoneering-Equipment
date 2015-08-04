@@ -55,6 +55,43 @@ function equipment_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-equipment-field_armor_type'
+  $field_instances['node-equipment-field_armor_type'] = array(
+    'bundle' => 'equipment',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_armor_type',
+    'label' => 'Armor Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 0,
+    ),
+  );
+
   // Exported field_instance: 'node-equipment-field_category'
   $field_instances['node-equipment-field_category'] = array(
     'bundle' => 'equipment',
@@ -138,6 +175,43 @@ function equipment_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-equipment-field_weapon_type'
+  $field_instances['node-equipment-field_weapon_type'] = array(
+    'bundle' => 'equipment',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_weapon_type',
+    'label' => 'Weapon Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'node-equipment-field_weight'
   $field_instances['node-equipment-field_weight'] = array(
     'bundle' => 'equipment',
@@ -186,12 +260,14 @@ function equipment_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Armor Type');
   t('Category');
   t('Cost');
   t('Description');
   t('Leave blank for items weighing less than one pound.');
   t('Round up to the nearest gold piece.');
   t('Select the type of item. This information is used to build tables of weapons, gear, etc.');
+  t('Weapon Type');
   t('Weight');
   t('What is it used for? What does it look like? Do not include stats here.');
 
