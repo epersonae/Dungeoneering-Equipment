@@ -39,34 +39,34 @@ function equipment_views_default_views() {
   );
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
+    'field_cost' => 'field_cost',
     'field_weight' => 'field_weight',
     'field_category' => 'field_category',
-    'field_cost' => 'field_cost',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
     'title' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_weight' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_category' => array(
-      'sortable' => 0,
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
     'field_cost' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_weight' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_category' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -103,6 +103,7 @@ function equipment_views_default_views() {
   $handler->display->display_options['fields']['field_category']['field'] = 'field_category';
   $handler->display->display_options['fields']['field_category']['label'] = '';
   $handler->display->display_options['fields']['field_category']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_category']['element_type'] = 'strong';
   $handler->display->display_options['fields']['field_category']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Category (field_category) */
   $handler->display->display_options['sorts']['field_category_value']['id'] = 'field_category_value';
