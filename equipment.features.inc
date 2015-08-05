@@ -40,3 +40,15 @@ function equipment_node_info() {
   drupal_alter('node_info', $items);
   return $items;
 }
+
+
+/**
+ * Implements hook_ctools_plugin_api().
+ see also https://www.drupal.org/node/1619154#comment-9678245
+ 
+ */
+function equipment_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "field_group" && $api == "field_group") {
+    return array("version" => "1");
+  }
+}
