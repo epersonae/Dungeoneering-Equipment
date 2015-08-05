@@ -32,5 +32,25 @@ function equipment_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['views-equipment_categories-block'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'equipment_categories-block',
+    'module' => 'views',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   return $export;
 }
