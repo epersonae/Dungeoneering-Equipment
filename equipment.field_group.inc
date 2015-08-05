@@ -18,10 +18,10 @@ function equipment_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'equipment';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_options';
+  $field_group->parent_name = 'group_equip';
   $field_group->data = array(
     'label' => 'Armor Options',
-    'weight' => '5',
+    'weight' => '1',
     'children' => array(
       0 => 'field_armor_type',
     ),
@@ -46,10 +46,10 @@ function equipment_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'equipment';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_options';
+  $field_group->parent_name = 'group_equip';
   $field_group->data = array(
-    'label' => 'Basic Information',
-    'weight' => '4',
+    'label' => 'Basics',
+    'weight' => '0',
     'children' => array(
       0 => 'body',
       1 => 'field_weight',
@@ -69,6 +69,33 @@ function equipment_field_group_info() {
     ),
   );
   $export['group_basics|node|equipment|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_equip|node|equipment|form';
+  $field_group->group_name = 'group_equip';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'equipment';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Equipment',
+    'weight' => '2',
+    'children' => array(
+      0 => 'group_basics',
+      1 => 'group_armor',
+      2 => 'group_weapons',
+    ),
+    'format_type' => 'htabs',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'classes' => 'group-equip field-group-htabs',
+      ),
+    ),
+  );
+  $export['group_equip|node|equipment|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -105,10 +132,10 @@ function equipment_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'equipment';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_options';
+  $field_group->parent_name = 'group_equip';
   $field_group->data = array(
     'label' => 'Weapon Options',
-    'weight' => '6',
+    'weight' => '2',
     'children' => array(
       0 => 'field_weapon_type',
     ),

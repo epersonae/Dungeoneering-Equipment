@@ -25,6 +25,7 @@ features[field_base][] = field_weapon_type
 features[field_base][] = field_weight
 features[field_group][] = group_armor|node|equipment|form
 features[field_group][] = group_basics|node|equipment|form
+features[field_group][] = group_equip|node|equipment|form
 features[field_group][] = group_options|node|equipment|form
 features[field_group][] = group_weapons|node|equipment|form
 features[field_instance][] = node-equipment-body
