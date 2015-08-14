@@ -1,6 +1,6 @@
 <?php
 //need a function to implement hook_migrate_api()
-function dungeon_migrate_migrate_api() {
+function equipment_migrate_api() {
 	return array(
 		'api' => 2,
 		'groups' => array(
