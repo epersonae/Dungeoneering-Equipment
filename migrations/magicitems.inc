@@ -18,7 +18,7 @@ class MagicItemMigration extends DungeonMigration {
     	
     	$this->destination = new MigrateDestinationNode('equipment');
     	
-    	$this->machineName,
+    	$this->map = new MigrateSQLMap($this->machineName,
 			array(
 				'Name' => array(
           			'type' => 'varchar',
