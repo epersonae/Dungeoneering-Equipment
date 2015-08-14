@@ -64,10 +64,7 @@ class MagicItemMigration extends DungeonMigration {
 				"body:summary",
 				"body:format",
 				"path",
-				"comment",
-				"totalcount",
-				"daycount",
-				"timestamp"
+				"comment"
 			)
 		);
     }
