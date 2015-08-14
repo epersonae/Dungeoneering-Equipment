@@ -13,7 +13,8 @@ class MagicItemMigration extends DungeonMigration {
     	$options = array(
 	    	'header_rows' => '1',	
     	);
-    	$this->source = new MigrateSourceCSV('/Applications/MAMP/htdocs/dungeon-source/magic_items_full.csv', array(),$options);
+    	//$this->source = new MigrateSourceCSV('/Applications/MAMP/htdocs/dungeon-source/magic_items_full.csv', array(),$options);
+    	$this->source = new MigrateSourceCSV(drupal_get_path('module', 'equipment') . '/migrations/magic_items_full.csv', array(),$options);
     	
     	$this->destination = new MigrateDestinationNode('equipment');
     	
