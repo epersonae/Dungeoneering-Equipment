@@ -18,7 +18,7 @@ function equipment_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'equipment';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_equip';
+  $field_group->parent_name = 'group_options';
   $field_group->data = array(
     'label' => 'Armor Options',
     'weight' => '1',
@@ -46,16 +46,17 @@ function equipment_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'equipment';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_equip';
+  $field_group->parent_name = 'group_options';
   $field_group->data = array(
     'label' => 'Basics',
     'weight' => '0',
     'children' => array(
       0 => 'body',
-      1 => 'field_weight',
+      1 => 'field_category',
       2 => 'field_cost',
-      3 => 'field_category',
-      4 => 'title',
+      3 => 'field_weight',
+      4 => 'field_magical',
+      5 => 'title',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -82,11 +83,7 @@ function equipment_field_group_info() {
   $field_group->data = array(
     'label' => 'Equipment',
     'weight' => '2',
-    'children' => array(
-      0 => 'group_basics',
-      1 => 'group_armor',
-      2 => 'group_weapons',
-    ),
+    'children' => array(),
     'format_type' => 'htabs',
     'format_settings' => array(
       'formatter' => '',
@@ -111,8 +108,8 @@ function equipment_field_group_info() {
     'weight' => '2',
     'children' => array(
       0 => 'group_armor',
-      1 => 'group_weapons',
-      2 => 'group_basics',
+      1 => 'group_basics',
+      2 => 'group_weapons',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -132,7 +129,7 @@ function equipment_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'equipment';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_equip';
+  $field_group->parent_name = 'group_options';
   $field_group->data = array(
     'label' => 'Weapon Options',
     'weight' => '2',

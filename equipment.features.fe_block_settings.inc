@@ -27,24 +27,10 @@ function equipment_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => -7,
       ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['views-equipment_categories-block'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'equipment_categories-block',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => 'sidebar_first',
-        'status' => 1,
-        'theme' => 'bartik',
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
         'weight' => 0,
       ),
     ),

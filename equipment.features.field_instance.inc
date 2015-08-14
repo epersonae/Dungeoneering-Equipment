@@ -171,7 +171,50 @@ function equipment_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => -2,
+      'weight' => -1,
+    ),
+  );
+
+  // Exported field_instance: 'node-equipment-field_magical'
+  $field_instances['node-equipment-field_magical'] = array(
+    'bundle' => 'equipment',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_magical',
+    'label' => 'Magical',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => -3,
     ),
   );
 
@@ -254,7 +297,7 @@ function equipment_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => -3,
+      'weight' => -2,
     ),
   );
 
@@ -265,6 +308,7 @@ function equipment_field_default_field_instances() {
   t('Cost');
   t('Description');
   t('Leave blank for items weighing less than one pound.');
+  t('Magical');
   t('Round up to the nearest gold piece.');
   t('Select the type of item. This information is used to build tables of weapons, gear, etc.');
   t('Weapon Type');

@@ -72,10 +72,14 @@ class MagicItemMigration extends DungeonMigration {
     function prepareRow($row) {
 	    //drush_print_r($row);
 	    
+	    if($row->WeightValue == 'NULL') { $row->WeightValue = ''; };
+	    
 	    if($row->Group=='Armor') {
 		    $row->Category = 'Armor and Shields';
 	    } elseif($row->Group=='Weapon' or $row->Group=='Ammunition') {
 		    $row->Category = 'Weapons';
+	    } else { 
+		    $row->Category = 'Misc Magic Items';
 	    }
     }
 }
