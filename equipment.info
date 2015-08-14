@@ -48,3 +48,8 @@ features[variable][] = site_frontpage
 features[variable][] = site_name
 features[variable][] = site_slogan
 features[views_view][] = equipment_tables
+
+; manually added information for Migrate
+dependencies[] = migrate
+files[] = migrations/dungeon.inc
+files[] = migrations/magicitems.inc
