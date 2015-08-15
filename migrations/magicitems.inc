@@ -2,6 +2,8 @@
 /**
 	* @file
 	* Imports Pathfinder magic items as equipment from CSV
+	* Takes data from http://www.pathfindercommunity.net/home/databases
+	* Alternatively, try http://www.d20pfsrd.com/magic-items/magic-items-db
 */
 
 class MagicItemMigration extends DungeonMigration {
