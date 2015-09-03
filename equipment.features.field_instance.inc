@@ -175,6 +175,68 @@ function equipment_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-equipment-field_image'
+  $field_instances['node-equipment-field_image'] = array(
+    'bundle' => 'equipment',
+    'deleted' => 0,
+    'description' => 'This should be a picture of the piece of equipment. (Mostly I\'m including it here to test out some issues with Migrate and files.)',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_image',
+    'label' => 'Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'upload' => 0,
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'node-equipment-field_magical'
   $field_instances['node-equipment-field_magical'] = array(
     'bundle' => 'equipment',
@@ -307,10 +369,12 @@ function equipment_field_default_field_instances() {
   t('Category');
   t('Cost');
   t('Description');
+  t('Image');
   t('Leave blank for items weighing less than one pound.');
   t('Magical');
   t('Round up to the nearest gold piece.');
   t('Select the type of item. This information is used to build tables of weapons, gear, etc.');
+  t('This should be a picture of the piece of equipment. (Mostly I\'m including it here to test out some issues with Migrate and files.)');
   t('Weapon Type');
   t('Weight');
   t('What is it used for? What does it look like? Do not include stats here.');

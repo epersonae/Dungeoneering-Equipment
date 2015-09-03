@@ -54,9 +54,10 @@ function equipment_field_group_info() {
       0 => 'body',
       1 => 'field_category',
       2 => 'field_cost',
-      3 => 'field_weight',
-      4 => 'field_magical',
-      5 => 'title',
+      3 => 'field_magical',
+      4 => 'field_weight',
+      5 => 'field_image',
+      6 => 'title',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
